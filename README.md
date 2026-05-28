@@ -30,10 +30,14 @@ The main topics are HTML, CSS, responsive design, forms, Git, hosting, and basic
 - GitHub
 - GitHub Pages or Vercel
 
+## Course Result
+
+After completing this course, I will have a basic website created with HTML and CSS.
+
 ## Goal
 
 The goal of this course is to learn how to create simple, responsive, and well-structured web pages.
 
 ## Author
 
-Student: Illa Bizyak
+Student: Ivan Ivanov
