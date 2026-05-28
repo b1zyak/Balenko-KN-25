@@ -40,4 +40,4 @@ The goal of this course is to learn how to create simple, responsive, and well-s
 
 ## Author
 
-Student: Ivan Ivanov
+Student: Illa Bizyak
