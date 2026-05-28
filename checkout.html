@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechShop - Магазин гаджетів</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/hermann-gotisch" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/normalize.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/form.css" />
+</head>
+<body>
+  <header class="header">
+  <div class="logo">
+    <a href="./index.html">TechShop</a>
+  </div>
+  
+  <nav class="main-nav">
+    <ul class="nav-list">
+      <li><a href="./index.html">Головна</a></li>
+      <li><a href="#">Каталог</a></li>
+      <li><a href="#">Про нас</a></li>
+      <li>
+        <a href="./checkout.html">Оформлення замовлення</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="user-actions">
+    <button class="btn btn-cart">Кошик (0)</button>
+  </div>
+</header>
+  <main class="content-block">
+    <h2>Оформлення замовлення</h2>
+
+    <form action="#" method="POST" class="checkout-form">
+      <fieldset>
+        <legend>1. Особисті дані</legend>
+        <div class="form-group">
+          <label for="fullName">ПІБ:</label>
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            required
+            placeholder="Іванов Іван Іванович"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Телефон:</label>
+          <!-- Валідація на 10-12 цифр + код країни -->
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[\+]\d{2}\d{10}"
+            placeholder="+380991234567"
+            required
+            title="Формат: +380XXXXXXXXX"
+          />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>2. Спосіб доставки</legend>
+        <div class="form-radio">
+          <input
+            type="radio"
+            id="deliveryNova"
+            name="delivery"
+            value="nova_poshta"
+            checked
+          />
+          <label for="deliveryNova">Нова Пошта</label>
+        </div>
+        <div class="form-radio">
+          <input
+            type="radio"
+            id="deliveryCourier"
+            name="delivery"
+            value="courier"
+          />
+          <label for="deliveryCourier">Кур'єр за адресою</label>
+        </div>
+
+        <div class="form-group">
+          <label for="city">Місто:</label>
+          <select id="city" name="city">
+            <option value="odesa">Одеса</option>
+            <option value="kyiv">Київ</option>
+            <option value="lviv">Львів</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>3. Коментар та згода</legend>
+
+        <div class="form-group">
+          <label for="comment">Коментар до замовлення:</label>
+          <textarea id="comment" name="comment"></textarea>
+        </div>
+
+        <div class="form-radio">
+          <input
+            type="checkbox"
+            id="confirmTerms"
+            name="confirmTerms"
+            value="confirm_terms"
+            checked
+          />
+          <label for="confirmTerms">Я погоджуюсь з правилами магазину</label>
+        </div>
+      </fieldset>
+
+      <button type="submit" class="btn btn-primary">Підтвердити замовлення</button>
+    </form>
+  </main>
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <h3>Контактна інформація</h3>
+        <ul>
+          <li>Номер телефону: 9379992</li>
+          <li>Адреса: Кропивницький, вул. Велика Перспективна 1</li>
+          <li>Години роботи: 9:00 - 19:00, без вихідних</li>
+        </p>
+      </div>
+      <div>
+        <h3>Соціальні Мережі</h3>
+        <ul>
+          <li>
+            <a href="#">Facebook</a>
+          </li>
+          <li>
+            <a href="#">Instagram</a>
+          </li>
+          <li>
+            <a href="#">X</a>
+          </li>
+        </p>
+      </div>
+      <div>
+        <h3>Зворотній зв'язок</h3>
+        <form>
+          <input type="email">
+          <button>Підписатися</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 TechShop</p>
+    </div>
+  </footer>
+</body>
+</html>
