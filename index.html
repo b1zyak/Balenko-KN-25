@@ -7,100 +7,105 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/hermann-gotisch" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/normalize.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
-  <header>
-    <h1>Магазин</h1>
-    <nav>
-      <ul>
-        <li>
-          <a href="#">Головна</a>
-        </li>
-        <li>
-          <a href="#">Товари</a>
-        </li>
-        <li>
-          <a href="#">Про нас</a>
-        </li>
-        <li>
-          <a href="#">Контакти</a>
-        </li>
-        <li>
-          <a href="#">Кошик</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <header class="header">
+  <div class="logo">TechShop</div>
+  
+  <nav class="main-nav">
+    <ul class="nav-list">
+      <li><a href="#">Головна</a></li>
+      <li><a href="#">Каталог</a></li>
+      <li><a href="#">Про нас</a></li>
+    </ul>
+  </nav>
+
+  <div class="user-actions">
+    <button class="btn btn-cart">Кошик (0)</button>
+  </div>
+</header>
   <main>
     <section class="hero">
-      <h2>Новинки 2025</h2>
+      <h2>Новинки 2026</h2>
       <a href="#">Перейти</a>
     </section>
-    <section>
-      <h2>Популярні товари</h2>
+    <section class="content-block">
+      <h2 class="content-block-title">Популярні товари</h2>
 
-      <article>
-        <img alt="Айфон" src="https://via.placeholder.com/150">
-        <h3>Айфон</h3>
-        <p>Чорний колір, новий</p>
-        <p>1000$</p>
-        <button class="btn">Купити</button>
-      </article>
-      <article>
-        <img alt="Еірподс" src="https://via.placeholder.com/150">
-        <h3>Еірподс</h3>
-        <p>Нові, 2 покоління</p>
-        <p>150$</p>
-        <button class="btn">Купити</button>
-      </article>
-      <article>
-        <img alt="Епл Вотч" src="https://via.placeholder.com/150">
-        <h3>Епл Вотч</h3>
-        <p>Чорний колір, ультра версія</p>
-        <p>1499$</p>
-        <button class="btn">Купити</button>
-      </article>
-      <article>
-        <img alt="Макбук" src="https://via.placeholder.com/150">
-        <h3>Макбук</h3>
-        <p>16 дюймів</p>
-        <p>3000$</p>
-        <button class="btn">Купити</button>
-      </article>
+      <div class="products-grid">
+        <div class="product-card">
+          <img src="./assets/img/iphone-17.jpg" alt="Product Name" class="product-img">
+          <h3 class="product-title">IPhone 17 Pro Max</h3>
+          <p class="product-desc">Потужний процесор та неймовірна камера.</p>
+          <span class="product-price">70 000 грн</span>
+          <button class="btn-buy">Купити</button>
+        </div>
+
+        <div class="product-card">
+          <img src="./assets/img/iphone-16.jpg" alt="Product Name" class="product-img">
+          <h3 class="product-title">IPhone 16 Pro Max</h3>
+          <p class="product-desc">Потужний процесор та неймовірна камера.</p>
+          <span class="product-price">60 000 грн</span>
+          <button class="btn-buy">Купити</button>
+        </div>
+
+        <div class="product-card">
+          <img src="./assets/img/iphone-15.jpg" alt="Product Name" class="product-img">
+          <h3 class="product-title">IPhone 15 Pro Max</h3>
+          <p class="product-desc">Потужний процесор та неймовірна камера.</p>
+          <span class="product-price">50 000 грн</span>
+          <button class="btn-buy">Купити</button>
+        </div>
+
+        <div class="product-card">
+          <img src="./assets/img/iphone-14.jpg" alt="Product Name" class="product-img">
+          <h3 class="product-title">IPhone 14 Pro Max</h3>
+          <p class="product-desc">Потужний процесор та неймовірна камера.</p>
+          <span class="product-price">40 000 грн</span>
+          <button class="btn-buy">Купити</button>
+        </div>
+      </div>
+
     </section>
   </main>
-  <footer>
-    <section>
-      <h3>Контактна інформація</h3>
-      <ul>
-        <li>Номер телефону: 9379992</li>
-        <li>Адреса: Кропивницький, вул. Велика Перспективна 1</li>
-        <li>Години роботи: 9:00 - 19:00, без вихідних</li>
-      </p>
-    </section>
-    <section>
-      <h3>Соціальні Мережі</h3>
-      <ul>
-        <li>
-          <a href="#">Facebook</a>
-        </li>
-        <li>
-          <a href="#">Instagram</a>
-        </li>
-        <li>
-          <a href="#">X</a>
-        </li>
-      </p>
-    </section>
-    <section>
-      <form>
-        <input type="email">
-        <button>Підписатися</button>
-      </form>
-    </section>
-    <p>&copy; 2025 TechShop</p>
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <h3>Контактна інформація</h3>
+        <ul>
+          <li>Номер телефону: 9379992</li>
+          <li>Адреса: Кропивницький, вул. Велика Перспективна 1</li>
+          <li>Години роботи: 9:00 - 19:00, без вихідних</li>
+        </p>
+      </div>
+      <div>
+        <h3>Соціальні Мережі</h3>
+        <ul>
+          <li>
+            <a href="#">Facebook</a>
+          </li>
+          <li>
+            <a href="#">Instagram</a>
+          </li>
+          <li>
+            <a href="#">X</a>
+          </li>
+        </p>
+      </div>
+      <div>
+        <h3>Зворотній зв'язок</h3>
+        <form>
+          <input type="email">
+          <button>Підписатися</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 TechShop</p>
+    </div>
   </footer>
 </body>
 </html>
