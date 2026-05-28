@@ -37,6 +37,11 @@ footer a {
   font-size: 3em;
 }
 
+.logo a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
 .btn {
   display: inline-block;
   padding: 12px 24px;
